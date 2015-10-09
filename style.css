@@ -41,6 +41,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Global Styles
+# Heading Styles
+# Home Styles
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
@@ -243,27 +246,11 @@ textarea {
   font-style: normal; }
 
 @font-face {
-  font-family: 'bebas_neue';
-  src: url("fonts/bebasneue-webfont.eot");
-  src: url("fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue-webfont.woff2") format("woff2"), url("fonts/bebasneue-webfont.woff") format("woff"), url("fonts/bebasneue-webfont.ttf") format("truetype"), url("fonts/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+  font-family: 'bebas_neuebook';
+  src: url("fonts/bebasneue_book-webfont.eot");
+  src: url("fonts/bebasneue_book-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue_book-webfont.woff2") format("woff2"), url("fonts/bebasneue_book-webfont.woff") format("woff"), url("fonts/bebasneue_book-webfont.ttf") format("truetype"), url("fonts/bebasneue_book-webfont.svg#bebas_neuebook") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-body {
-  font-family: florence; }
-
-.home-title {
-  font-family: bebas_neue;
-  font-size: 54px;
-  text-align: center;
-  line-height: 55px;
-  font-stretch: condensed; }
-
-#site-navigation a {
-  color: #6D6E70;
-  text-decoration: none;
-  font-size: 30px;
-  padding: 30px; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
@@ -517,24 +504,6 @@ a {
   text-align: right;
   width: 50%; }
 
-#site-navigation {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -750,3 +719,131 @@ object {
 
 .gallery-caption {
   display: block; }
+
+/* Global Styles */
+html {
+  background-color: #E6E7E8; }
+
+body {
+  font-family: florence;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh; }
+
+/* Heading Styles */
+#site-navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px; }
+  #site-navigation li {
+    margin: 30px; }
+    #site-navigation li:hover {
+      border-bottom: 4px double #56C4C5;
+      -webkit-transition: 500ms;
+              transition: 500ms; }
+    #site-navigation li a {
+      padding: 0;
+      text-decoration: none;
+      font-size: 30px;
+      color: #6D6E70; }
+
+#menu-item-19 {
+  margin-right: 15px !important; }
+
+#menu-item-20 {
+  margin-right: 15px !important; }
+
+/* Home Styles */
+.home-title {
+  color: #6D6E70;
+  margin-top: 80px;
+  font-family: bebas_neuebook;
+  font-size: 54px;
+  text-align: center;
+  line-height: 55px;
+  font-stretch: condensed;
+  margin-bottom: 36px; }
+
+.home-content {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.about-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 19px; }
+  .about-wrap p {
+    margin: 0; }
+
+.left-text {
+  padding-right: 25px;
+  border-right: 2px solid #56C4C5;
+  margin-right: 2px;
+  padding-bottom: 60px; }
+
+.right-text {
+  padding-left: 25px;
+  border-left: 2px solid #56C4C5;
+  margin-left: 2px;
+  text-align: right;
+  padding-bottom: 60px; }
+
+.dots {
+  margin-top: 110px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.single-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #5EC5C7;
+  margin-left: 32px;
+  margin-right: 32px; }
