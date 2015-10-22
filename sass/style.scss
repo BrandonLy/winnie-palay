@@ -332,3 +332,18 @@ body {
 	}
 }
 
+/* Writing Styles */
+.writing-section {
+	.paper-wrap {
+		margin: 10px;
+		max-width: 200px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	a {
+		color: $light-blue;
+		font-size: 15px;
+	}
+}

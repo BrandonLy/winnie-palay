@@ -986,3 +986,24 @@ body {
   font-size: 25px; }
   .contact-section a {
     color: #56C4C5; }
+
+/* Writing Styles */
+.writing-section .paper-wrap {
+  margin: 10px;
+  max-width: 200px;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.writing-section a {
+  color: #56C4C5;
+  font-size: 15px; }
