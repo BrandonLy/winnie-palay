@@ -10,20 +10,12 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-				<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				?>
-
-			<?php endwhile; // End of the loop. ?>
+		<div class="contact-wrap">
+			<h2 class="contact-title">contact.</h2>
+			<p class="contact-section">EMAIL: <a href="mailto:wii.palay@gmail.com">wii.palay@gmail.com</a></p>
+			<p class="contact-section">PHONE NUMBER: <a href="tel:+17025883269">(702) 588-3269</a></p>
+			<p class="contact-section">Please feel free to contact me with questions, comments, or concerns. Your input is welcome!</p>
+		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php get_footer(); ?>
