@@ -22,6 +22,32 @@ object {
 	background-repeat: no-repeat;
 }
 
+.mobile-logo {
+	width: 400px;
+	height: 152px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background: url('img/logo.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: none;
+}
+
+@media screen and (max-width: 1000px) {
+	.mobile-logo {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.mobile-logo {
+		max-width: 280px;
+		max-height: 100px;
+		margin-top: 0;
+		margin: 0 auto;
+	}
+}
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/

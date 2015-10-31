@@ -31,6 +31,9 @@
 			<div class="logo"></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'right-menu', 'menu_id' => 'right-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+		<div class="mobile-logo"></div>
+		<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_id' => 'mobile-menu' ) ); ?>
+		<div class="slicknav-wrap"></div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -46,7 +46,8 @@ function winnie_palay_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'winnie-palay' ),
 		'left-menu' => __( ' Left Menu ' ),
-		'right-menu' => __( ' Right Menu ' )
+		'right-menu' => __( ' Right Menu ' ),
+		'mobile-menu' => __( ' Mobile Menu ' )
 	) );
 
 	/*

@@ -673,6 +673,27 @@ object {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.mobile-logo {
+  width: 400px;
+  height: 152px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: url("img/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none; }
+
+@media screen and (max-width: 1000px) {
+  .mobile-logo {
+    display: block; } }
+
+@media screen and (max-width: 425px) {
+  .mobile-logo {
+    max-width: 280px;
+    max-height: 100px;
+    margin-top: 0;
+    margin: 0 auto; } }
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
@@ -768,6 +789,9 @@ body {
 
 #menu-item-20 {
   margin-right: 15px !important; }
+
+#mobile-menu {
+  display: none; }
 
 /* Home Styles */
 .home-title {
@@ -1007,3 +1031,66 @@ body {
 .writing-section a {
   color: #56C4C5;
   font-size: 15px; }
+
+/* Mobile Styles */
+@media screen and (max-width: 1000px) {
+  /* Global Styles */
+  body {
+    max-width: 90%; }
+  /* Navigation Styles */
+  #site-navigation {
+    display: none; }
+  .slicknav_menu {
+    text-align: center; }
+    .slicknav_menu .slicknav_btn {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      float: none;
+      margin: 0 auto; }
+      .slicknav_menu .slicknav_btn .slicknav_icon-bar {
+        width: 33px;
+        height: 3.5px;
+        margin: 5px; }
+    .slicknav_menu .slicknav_nav {
+      margin-top: 60px; }
+  .slicknav-wrap {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 90%; }
+  /* Home Styles */
+  .about-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto; }
+    .about-wrap .left-text, .about-wrap .right-text {
+      border: none;
+      text-align: center;
+      padding-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0; }
+  .dots {
+    margin-top: 30px;
+    margin-bottom: 30px; } }
