@@ -18,7 +18,9 @@ get_header(); ?>
 					<div class="paper-wrap">
 						<p class="paper-title"><?php echo the_title(); ?></p>
 						<div class="work paper">
-							<embed src="<?php echo $paper; ?>">
+							<object data="<?php echo $paper; ?>" type="application/pdf">
+								<p>Sorry the pdf you are trying to view is only available on desktop. Feel free to use the download link below.</p>
+							</object>
 						</div>
 						<a href="<?php echo $paper; ?>">
 							<p class="paper-button">Click here to view the PDF</p>

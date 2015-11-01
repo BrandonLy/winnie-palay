@@ -681,7 +681,8 @@ object {
   background: url("img/logo.png");
   background-size: cover;
   background-repeat: no-repeat;
-  display: none; }
+  display: none;
+  margin-top: 20px; }
 
 @media screen and (max-width: 1000px) {
   .mobile-logo {
@@ -691,8 +692,8 @@ object {
   .mobile-logo {
     max-width: 280px;
     max-height: 100px;
-    margin-top: 0;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    margin-top: 20px; } }
 
 /*--------------------------------------------------------------
 ## Captions
@@ -924,8 +925,8 @@ body {
   -webkit-transition: all 500ms;
           transition: all 500ms;
   text-align: center;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -1041,7 +1042,8 @@ body {
   #site-navigation {
     display: none; }
   .slicknav_menu {
-    text-align: center; }
+    text-align: center;
+    z-index: 999; }
     .slicknav_menu .slicknav_btn {
       position: absolute;
       left: 0;
@@ -1093,4 +1095,47 @@ body {
       padding-right: 0; }
   .dots {
     margin-top: 30px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  /* Contact Styles */
+  .contact-wrap {
+    max-width: 90%;
+    margin: 0 auto; }
+  .contact-section {
+    font-size: 20px; }
+  .contact-title {
+    margin-top: 80px; }
+  /* Art Styles */
+  .section-title:first-child {
+    margin-top: 130px; }
+  .works-wrap .work-section .work {
+    min-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px; }
+    .works-wrap .work-section .work .hover {
+      width: 100%;
+      height: 100%; }
+  .section-title {
+    max-width: 80%; }
+  /* Lightbox Styles */
+  #lightbox-wrapper img {
+    max-width: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  #lightbox-wrapper #caption-wrapper {
+    max-width: 80%;
+    padding: 10px;
+    margin-bottom: 20px; }
+    #lightbox-wrapper #caption-wrapper #lightbox-title {
+      font-size: 30px; }
+    #lightbox-wrapper #caption-wrapper p {
+      font-size: 18px; }
+  /* Writing Styles */
+  .writing-section {
+    text-align: center; }
+  .paper-wrap {
+    margin: 0 auto !important; }
+    .paper-wrap .work {
+      margin-top: 20px !important; }
+  object p {
+    font-size: 14px; } }

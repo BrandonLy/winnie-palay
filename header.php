@@ -28,10 +28,10 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'left-menu', 'menu_id' => 'left-menu' ) ); ?>
-			<div class="logo"></div>
+			<a href="<?php get_site_url(); ?>"><div class="logo"></div></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'right-menu', 'menu_id' => 'right-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-		<div class="mobile-logo"></div>
+		<a href="<?php get_site_url(); ?>"><div class="mobile-logo"></div></a>
 		<?php wp_nav_menu( array( 'theme_location' => 'mobile-menu', 'menu_id' => 'mobile-menu' ) ); ?>
 		<div class="slicknav-wrap"></div>
 	</header><!-- #masthead -->
