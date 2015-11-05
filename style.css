@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
 Description: Description
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: winnie-palay
@@ -749,7 +749,7 @@ html {
 
 body {
   font-family: florence;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   min-height: 100vh; }
 
@@ -774,7 +774,7 @@ body {
           align-items: center;
   margin-top: 40px; }
   #site-navigation li {
-    margin: 30px; }
+    margin: 20px; }
     #site-navigation li:hover {
       border-bottom: 4px double #56C4C5;
       -webkit-transition: 500ms;
@@ -782,7 +782,7 @@ body {
     #site-navigation li a {
       padding: 0;
       text-decoration: none;
-      font-size: 30px;
+      font-size: 25px;
       color: #6D6E70; }
 
 #menu-item-19 {
@@ -797,16 +797,16 @@ body {
 /* Home Styles */
 .home-title {
   color: #6D6E70;
-  margin-top: 80px;
+  margin-top: 50px;
   font-family: bebas_neuebook;
-  font-size: 54px;
+  font-size: 45px;
   text-align: center;
   line-height: 55px;
   font-stretch: condensed;
   margin-bottom: 36px; }
 
 .home-content {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto; }
 
 .about-wrap {
@@ -827,9 +827,10 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 19px; }
+  font-size: 15px; }
   .about-wrap p {
-    margin: 0; }
+    margin: 0;
+    color: #6D6E70; }
 
 .left-text {
   padding-right: 25px;
@@ -845,7 +846,7 @@ body {
   padding-bottom: 60px; }
 
 .dots {
-  margin-top: 110px;
+  margin-top: 90px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -914,23 +915,26 @@ body {
   position: relative;
   margin: 10px; }
   .work:hover .hover {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    visibility: visible;
+    opacity: 1; }
   .work img {
     min-height: 100%; }
 
 .hover {
-  -webkit-transition: all 500ms;
-          transition: all 500ms;
+  -webkit-transition: visibility 0.8s, opacity 0.8s;
+          transition: visibility 0.8s, opacity 0.8s;
   text-align: center;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
   color: white;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -1000,38 +1004,42 @@ body {
   color: #6D6E70; }
 
 .contact-title {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   margin-top: 50px; }
 
 .contact-section {
   border-bottom: 4px double #56C4C5;
-  margin: 50px auto 50px auto;
+  margin: 15px auto 15px auto;
   padding: 20px;
-  font-size: 25px; }
+  font-size: 20px; }
   .contact-section a {
     color: #56C4C5; }
 
 /* Writing Styles */
-.writing-section .paper-wrap {
-  margin: 10px;
-  max-width: 200px;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-
-.writing-section a {
-  color: #56C4C5;
-  font-size: 15px; }
+.writing-section {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .writing-section .paper-wrap {
+    margin: 10px;
+    max-width: 200px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .writing-section a {
+    color: #56C4C5;
+    font-size: 15px; }
 
 /* Mobile Styles */
 @media screen and (max-width: 1000px) {
@@ -1068,7 +1076,11 @@ body {
       .slicknav_menu .slicknav_btn .slicknav_icon-bar {
         width: 33px;
         height: 3.5px;
-        margin: 5px; }
+        margin: 5px;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px; }
     .slicknav_menu .slicknav_nav {
       margin-top: 60px; }
   .slicknav-wrap {
@@ -1107,14 +1119,15 @@ body {
   /* Art Styles */
   .section-title:first-child {
     margin-top: 130px; }
-  .works-wrap .work-section .work {
-    min-width: 80%;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 50px; }
-    .works-wrap .work-section .work .hover {
-      width: 100%;
-      height: 100%; }
+  .works-wrap {
+    max-width: 80%; }
+    .works-wrap .work-section .work {
+      min-height: 50%;
+      margin: 0 auto;
+      margin-top: 50px; }
+      .works-wrap .work-section .work .hover {
+        width: 100%;
+        height: 100%; }
   .section-title {
     max-width: 80%; }
   /* Lightbox Styles */

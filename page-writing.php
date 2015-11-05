@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<div class="works-wrap">
-			<h2 class="section-title">writing.</h2>
+			<h2 class="section-title writing-title">writing.</h2>
 			<div class="work-section writing-section">
 				<?php $loop = new WP_Query( array( 'post_type' => 'writing' ) ); ?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
